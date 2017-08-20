@@ -1,0 +1,43 @@
+{
+  "name": "Boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1",
+	"prestart":"notify -t Started -m 'Development server started' -o localhost:8080",
+	"start": "npm-run-all --parallel dev:*",
+    "dev:js": "webpack-dev-server",
+    "dev:sass": "npm run build:sass -- -w",
+    "build": "npm-run-all build:*",
+    "build:js": "webpack",
+    "build:sass": "node-sass src/styles/app.scss dist/app.css --output-style compressed --source-map dist/app.css.map",
+    "build:webfonts": "webfont assets/**/*.svg -t css -d dist",
+    "webfont": "webfont",
+    "eslint": "eslint",
+    "sass": "node-sass",
+	"eslint:fix": "eslint --fix src",
+	"postbuild:js":"notify -t 'Javascript Build Completed' -m Complete",
+	"postbuild:sass":"notify -t 'Sass Build Completed' -m Complete",
+	"postbuild:webfonts":"notify -t 'Webfonts Build Completed' -m 'SVG files compiled into webfont in /dist folder'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.5.0",
+    "eslint-loader": "^1.9.0",
+    "node-notifier-cli": "^1.0.1",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.0.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webfont": "^7.1.4",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  }
+}

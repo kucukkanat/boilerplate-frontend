@@ -1,0 +1,51 @@
+{
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "globals": {
+      "document": true,
+      "console": true,
+      "require": true,
+      "window": true
+    },
+    "rules": {
+      "no-const-assign": 2,
+      "no-var": 2,
+      "no-new-object": 2,
+      "object-shorthand": 2,
+      "quote-props": 2,
+      "quotes":["error", "single", { "allowTemplateLiterals": true }],
+      "prefer-template":2,
+      "func-style":["error","expression"],
+      "space-before-function-paren": ["error", "always"],
+      "space-before-blocks":2,
+      "no-param-reassign":2,
+      "prefer-arrow-callback":2,
+      "arrow-spacing": ["error", { "before": true, "after": true }],
+      "no-useless-constructor":2,
+      "no-dupe-class-members":2,
+      "no-duplicate-imports":2,
+      "no-iterator":2,
+      "dot-notation":2,
+      "no-undef":2,
+      "one-var":2,
+      "no-plusplus":2,
+      "eqeqeq":1,
+      "brace-style":2,
+      "indent": ["error", "tab"],
+      "space-infix-ops":2,
+      "newline-per-chained-call":2,
+      "padded-blocks":["error","never"],
+      "space-in-parens":2,
+      "array-bracket-spacing":2,
+      "object-curly-spacing":2,
+      "comma-style": ["error", "last"],
+      "semi": ["error", "never"],
+      "new-cap":2,
+      "no-underscore-dangle":2
+    }
+  }
