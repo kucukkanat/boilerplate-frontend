@@ -20,7 +20,8 @@
     "eslint": "eslint",
     "sass": "node-sass",
     "eslint:fix": "eslint --fix src",
-    "jsdoc": "jsdoc src/**/*.js -d dist"
+    "jsdoc": "jsdoc src/**/*.js -d dist",
+    "screwy": "screwy"
   },
   "keywords": [],
   "author": "",
@@ -40,8 +41,8 @@
     "npm-run-all": "^4.0.2",
     "oidc-client": "^1.3.0",
     "react": "^15.6.1",
-    "react-bluekit": "^0.4.3",
     "react-dom": "^15.6.1",
+    "screwy": "^1.0.5",
     "webfont": "^7.1.4",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
