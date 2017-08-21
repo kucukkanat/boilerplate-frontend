@@ -1,5 +1,6 @@
 let path = require("path");
 const Aliases = require('./webpack.aliases.js')
+const webpack = require('webpack')
 module.exports = {
   target: "web",
   entry: {
