@@ -10,6 +10,7 @@ module.exports = {
     filename: "[name].build.js",
     publicPath: "dist"
   },
+  devtool:'source-map',
   resolve:{alias:Aliases},
   module: {
     rules: [
