@@ -12,7 +12,7 @@
     "build": "npm-run-all build:*",
     "build:js": "webpack",
     "build:sass": "node-sass src/styles/app.scss dist/app.css --output-style compressed --source-map dist/app.css.map",
-    "build:webfonts": "webfont assets/**/*.svg -t css -d dist",
+    "build:webfonts": "webfont assets/**/*.svg -t css -d dist --normalize",
     "postbuild:js": "notify -t 'Javascript Build Completed' -m Complete",
     "postbuild:sass": "notify -t 'Sass Build Completed' -m Complete",
     "postbuild:webfonts": "notify -t 'Webfonts Build Completed' -m 'SVG files compiled into webfont in /dist folder'",
