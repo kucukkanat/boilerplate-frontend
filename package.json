@@ -5,10 +5,11 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "npm-run-all --parallel dev:*",
+	"start":"screwy",
+	"start-dev-env": "npm-run-all --parallel dev:*",
 	"predev:js": "notify -t Started -m 'Development server started' -i assets/images/franx_logo.png",
     "dev:js": "webpack-dev-server",
-    "dev:sass": "node-sass -- -w",
+    "dev:sass": "node-sass src/styles/app.scss dist/app.css --output-style compressed --source-map dist/app.css.map -w",
     "build": "npm-run-all build:*",
 	"build:js": "webpack",
 	"postbuild:js": "notify -t 'Javascript Build Completed' -m Complete  -i assets/images/franx_logo.png",
