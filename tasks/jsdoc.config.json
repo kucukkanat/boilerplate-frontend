@@ -1,0 +1,18 @@
+{
+    "opts": {
+        "template": "node_modules/tui-jsdoc-template/",
+        "encoding": "utf8",
+        "destination": "./dist/docs/",
+        "recurse": true
+    },
+    "templates": {
+        "name": "Frontend Documentation",
+        "footerText": "FrMy Boilerplateanx",
+        "logo": {
+            "url": "https://franx.com/logo.png",
+            "width": "150px",
+            "height": "40px",
+            "link": "https://github.com"
+        }
+    }
+}
