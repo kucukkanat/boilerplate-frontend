@@ -1,0 +1,18 @@
+{
+    "opts": {
+        "template": "node_modules/tui-jsdoc-template/",
+        "encoding": "utf8",
+        "destination": "./dist/docs/",
+        "recurse": true
+    },
+    "templates": {
+        "name": "Frontend Documentation",
+        "footerText": "My Boilerplate",
+        "logo": {
+            "url": "https://github.com/logo.png",
+            "width": "150px",
+            "height": "40px",
+            "link": "https://github.com"
+        }
+    }
+}

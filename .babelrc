@@ -1,0 +1,31 @@
+{
+    "presets": ["env", "react"],
+    "plugins": [
+        ["module-alias", [
+            {
+                "expose": "@root",
+                "src": "./src/javascript/"
+            }, 
+            {
+                "expose": "@views",
+                "src": "./src/javascript/views"
+            }, 
+            {
+                "expose": "@shared",
+                "src": "./src/javascript/shared"
+            }, 
+            {
+                "expose": "@actions",
+                "src": "./src/javascript/actions"
+            }, 
+            {
+                "expose": "@reducers",
+                "src": "./src/javascript/reducers"
+            }, 
+            {
+                "expose": "@components",
+                "src": "./src/javascript/components"
+            }
+        ]]
+    ]
+}

@@ -1,0 +1,248 @@
+.no {
+    &-padding {
+        padding: 0;
+    }
+    &-margin {
+        margin: 0
+    }
+    &-padding-top {
+        padding-top: 0
+    }
+    &-padding-right {
+        padding-right: 0
+    }
+    &-padding-bottom {
+        padding-bottom: 0
+    }
+    &-padding-left {
+        padding-left: 0
+    }
+    &-margin-top {
+        margin-top: 0
+    }
+    &-margin-right {
+        margin-right: 0
+    }
+    &-margin-bottom {
+        margin-bottom: 0
+    }
+    &-margin-left {
+        margin-left: 0
+    }
+    &-select {
+        -webkit-user-select: none;
+        /* Safari */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* IE10+/Edge */
+        user-select: none;
+        /* Standard */
+    }
+}
+
+.is-hidden {
+    display: none;
+}
+
+.position {
+    &-absolute {
+        position: absolute
+    }
+    &-relative {
+        position: relative
+    }
+    &-fixed {
+        position: fixed
+    }
+}
+
+.full {
+    &-height {
+        height: 100%;
+    }
+    &-width {
+        width: 100%;
+    }
+    &-height-viewport {
+        height: 100vh;
+    }
+    &-width-viewport {
+        width: 100vh;
+    }
+}
+
+.flex {
+    display: flex
+}
+
+.inline-flex {
+    display: inline-flex
+}
+
+.inline-block {
+    display: inline-block
+}
+
+.block {
+    display: block
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-flex-start {
+    justify-content: flex-start;
+}
+
+.justify-flex-end {
+    justify-content: flex-end;
+}
+
+.align-flex-end {
+    align-content: flex-end;
+}
+
+.vertical-center {
+    align-items: center;
+}
+
+.horizontal-center {
+    justify-content: center;
+}
+
+.background {
+    &-smoke {
+        background-color: #ddd;
+    }
+    &-white {
+        background: #fff
+    }
+    &-snow {
+        background-color: #fbfbfb
+    }
+}
+
+.text {
+    &-center {
+        text-align: center
+    }
+    &-left {
+        text-align: left
+    }
+    &-right {
+        text-align: right
+    }
+    &-danger {
+        color: red;
+    }
+    &-muted {
+        color: #ddd;
+    }
+    &-primary {
+        color: rgb(0, 110, 236);
+    }
+    &-strong {
+        font-weight: bold
+    }
+    &-light {
+        font-weight: 100
+    }
+    &-uppercase {
+        text-transform: uppercase;
+    }
+    &-lowercase {
+        text-transform: lowercase;
+    }
+    &-nowrap {
+        white-space: nowrap;
+    }
+}
+
+.pull {
+    &-right {
+        float: right;
+    }
+    &-left {
+        float: left;
+    }
+}
+
+@for $i from 0 to 24 {
+    .flex-#{$i} {
+        flex: $i;
+    }
+    .padding-#{$i*5} {
+        padding-left: #{$i*5}px;
+        padding-right: #{$i*5}px;
+        padding-top: #{$i*5}px;
+        padding-bottom: #{$i*5}px;
+    }
+    .padding-vertical-#{$i*5} {
+        padding: #{$i*5}px 0px;
+    }
+    .padding-horizontal-#{$i*5} {
+        padding: 0px #{$i*5}px;
+    }
+    .margin-#{$i*5} {
+        margin: #{$i*5}px;
+    }
+    .margin-vertical-#{$i*5} {
+        margin: #{$i*5}px 0px;
+    }
+    .margin-horizontal-#{$i*5} {
+        margin: 0px #{$i*5}px;
+    }
+    .opacity-0#{$i} {
+        opacity: #{$i*0.1};
+    }
+}
+
+.opacity-10 {
+    opacity: 1
+}
+
+.pointer {
+    cursor: pointer
+}
+
+.center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overflow {
+    overflow: auto;
+}
+
+@for $i from 0 to 24 {
+    .seperator-#{$i*5} {
+        padding: #{$i*5}px;
+    }
+}
+
+.wrap {
+    white-space: pre-wrap;
+    /* CSS3 */
+    white-space: -moz-pre-wrap;
+    /* Firefox */
+    white-space: -pre-wrap;
+    /* Opera <7 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* IE */
+}
