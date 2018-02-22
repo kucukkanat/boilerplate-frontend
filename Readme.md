@@ -22,9 +22,15 @@ for development and production builds
 <a id='tasks'></a>
 ## NPM Scripts & Gulp Tasks 
 
-To develop run `npm run dev` 
+To develop run `npm run dev` (Fires a dev server on http://localhost:8080)
 
-To Build run `npm run build`
+To Build run `npm run build` 
+
+To run styleguide server `npm run styleguide` (Fires a styleguide server on http://localhost:3000)
+
+To build styleguide `npm run styleguide:build` (Builds the styleguide into ./dist folder)
+
+For further info using the styleguide please check [react-styleguidist](https://react-styleguidist.js.org)
 
 Gulp tasks are self explanatory : 
 
