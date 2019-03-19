@@ -3,10 +3,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const config = {
-  entry: './src/index.tsx',
+  mode: process.env.NODE_ENV ? process.env.NODE_ENV : "development",
+  entry: {
+    app: './src/index.tsx'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[contenthash].js',
+    filename: '[name].bundle.js',
     publicPath: "/"
   },
   module: {
@@ -59,19 +62,7 @@ const config = {
     new HtmlWebpackPlugin({
       template: "src/index.html"
     })
-  ],
-  optimization: {
-    runtimeChunk: 'single',
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /[\\\/]node_modules[\\\/]/,
-          name: 'vendors',
-          chunks: 'all'
-        }
-      }
-    }
-  }
+  ]
 }
 
 module.exports = config;
