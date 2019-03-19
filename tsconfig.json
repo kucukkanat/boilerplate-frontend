@@ -6,11 +6,12 @@
       "allowSyntheticDefaultImports": true,
       "noImplicitReturns": true,
       "noImplicitAny": true,
-      "module": "es6",
-      "moduleResolution": "node",
+      "module": "esnext", // Support Dynamic Imports and other ESNext features
+      "moduleResolution": "node", // Node module resolution for npm packages
       "target": "es5",
       "allowJs": true,
-      "jsx": "react"
+      "jsx": "react",
+      "lib": ["es2015", "dom"] // Types for libraries
   },
   "include": [
       "./src/**/*"

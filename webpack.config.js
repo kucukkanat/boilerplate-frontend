@@ -38,7 +38,12 @@ const config = {
       },
       {
         test: /\.(ts|tsx)?$/,
-        loader: 'ts-loader',
+        use: {
+          loader: 'ts-loader',
+          options: {
+            transpileOnly: false
+          }
+        },
         exclude: /node_modules/
       }
     ]
