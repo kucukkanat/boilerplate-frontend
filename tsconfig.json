@@ -5,7 +5,7 @@
       "strict": true,
       "allowSyntheticDefaultImports": true,
       "noImplicitReturns": true,
-      "noImplicitAny": true,
+      "noImplicitAny": false,
       "module": "esnext", // Support Dynamic Imports and other ESNext features
       "moduleResolution": "node", // Node module resolution for npm packages
       "target": "es5",

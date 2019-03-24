@@ -2,6 +2,7 @@ import React from "react"
 import {Provider} from "react-redux"
 import store from "./store/store"
 
+import ExampleComponent from "./components/ExampleComponent/index"
 type AppProps={}
 export default class App extends React.Component {
   constructor(props: AppProps) {
@@ -9,7 +10,7 @@ export default class App extends React.Component {
   }
   render (){
     return <Provider store={store}>
-      <div> Hello world! </div>
+      <div> Hello world!  <ExampleComponent /></div>
     </Provider>
   }
 }
