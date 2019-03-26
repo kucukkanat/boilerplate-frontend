@@ -3,9 +3,9 @@ import {Provider} from "react-redux"
 import store from "./store/store"
 
 import ExampleComponent from "./components/ExampleComponent/index"
-type AppProps={}
+
 export default class App extends React.Component {
-  constructor(props: AppProps) {
+  constructor(props) {
     super(props)
   }
   render (){
