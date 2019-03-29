@@ -7,6 +7,8 @@ declare interface WebpackConfig {
     module:  Module;
     resolve: Resolve;
     plugins: any[];
+    devtool:string;
+    devServer: object;
 }
 
 interface Entry {
@@ -20,7 +22,7 @@ interface Module {
 interface Rule {
     test:     RegExp;
     use:      Array<PurpleUse | string> | FluffyUse;
-    exclude?: string;
+    exclude?: RegExp;
 }
 
 interface PurpleUse {
@@ -49,4 +51,5 @@ interface Output {
 
 interface Resolve {
     extensions: string[];
+    alias: object
 }
