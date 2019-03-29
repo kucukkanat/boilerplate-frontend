@@ -11,6 +11,7 @@ const config = {
   entry: {
     app: './src/index.tsx'
   },
+  devtool:"source-map",
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
