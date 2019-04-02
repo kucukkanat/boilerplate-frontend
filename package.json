@@ -9,6 +9,12 @@
     "storybook": "start-storybook -s ./src --port 8080",
     "format": "prettier --write 'src/**/*.{ts,tsx,scss}' "
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format",
+      "pre-push": "echo test"
+    }
+  },
   "devDependencies": {
     "@storybook/react": "^5.0.6",
     "@types/react-dom": "^16.8.2",
