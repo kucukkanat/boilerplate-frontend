@@ -5,9 +5,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "NODE_ENV=development webpack"
+    "build": "NODE_ENV=development webpack",
+    "storybook": "start-storybook -s ./src --port 8080"
   },
   "devDependencies": {
+    "@storybook/react": "^5.0.6",
     "@types/react-dom": "^16.8.2",
     "@types/react-redux": "^7.0.5",
     "css-loader": "^2.1.1",

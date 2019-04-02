@@ -1,6 +1,8 @@
 export interface OwnProps {
     /** If the component is toggled */
-    toggled?: string
+    toggled?: string;
+    className?:string;
+    [propName:string]: any
 }
 
 export interface StateProps {
