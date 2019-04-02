@@ -1,5 +1,5 @@
 const reducers = {
-  _: (state: {}, action: {}) => ({...state})
-}
+  _: (state: {}, action: {}) => ({ ...state }),
+};
 
-export default reducers
+export default reducers;

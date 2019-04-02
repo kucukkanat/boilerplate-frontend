@@ -1,21 +1,21 @@
 export interface OwnProps {
-    /** If the component is toggled */
-    toggled?: string;
-    className?:string;
-    [propName:string]: any
+  /** If the component is toggled */
+  toggled?: string;
+  className?: string;
+  [propName: string]: any;
 }
 
 export interface StateProps {
-    reduxStateProp?: number
+  reduxStateProp?: number;
 }
 
 export interface DispatchProps {
-    /** Fires some action on redux store */
-    someAction?: () => void
+  /** Fires some action on redux store */
+  someAction?: () => void;
 }
 
-export type Props = OwnProps & StateProps & DispatchProps
+export type Props = OwnProps & StateProps & DispatchProps;
 
 export interface State {
-    isToggled?: boolean
+  isToggled?: boolean;
 }
