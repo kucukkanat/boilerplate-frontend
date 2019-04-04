@@ -1,5 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Component from './index';
+import {ExampleComponent} from './index';
 
-storiesOf('Component', module).add('primary', () => <Component className="primary" />);
+storiesOf('ExampleComponent', module).add('primary', () => <ExampleComponent className="primary" />);
