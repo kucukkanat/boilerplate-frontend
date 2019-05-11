@@ -63,7 +63,13 @@ const config = {
       '.js'
     ]
   },
+  devServer: {
+    historyApiFallback: true,
+    disableHostCheck: true,
+    https: false,
+  },
   plugins: [
+    new webpack.EnvironmentPlugin(['NODE_ENV']),
     new HtmlWebpackPlugin({
       template: "src/index.html"
     })
