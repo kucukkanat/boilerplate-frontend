@@ -1,0 +1,10 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "import/no-extraneous-dependencies": [0],
+    "max-len": ["error", { "code": 100 }]
+  },
+  "settings": {
+    "import/resolver": "webpack"
+  }
+}
