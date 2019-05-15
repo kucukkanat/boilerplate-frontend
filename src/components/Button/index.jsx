@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './style.scss';
 
+/**
+ * @typedef {{clicked?:boolean}} IButtonState
+ * @augments {React.Component<{className: string}, IButtonState>}
+ */
 export default class Button extends React.Component {
   constructor(props) {
     super(props);

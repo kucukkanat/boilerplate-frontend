@@ -47,7 +47,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.json', '.jsx', '.css'],
     alias: {
-      components: path.resolve(__dirname, 'src/components'),
+      '@components': path.resolve(__dirname, 'src/components'),
     },
   },
   performance: {
