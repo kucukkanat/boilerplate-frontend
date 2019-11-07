@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel serve index.html",
     "build": "parcel build index.html",
-    "check": "tsc --noEmit"
+    "checkSyntax": "tsc --noEmit"
   },
   "dependencies": {
     "@babylonjs/core": "^4.0.3",
