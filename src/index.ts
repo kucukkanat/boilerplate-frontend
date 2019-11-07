@@ -1,1 +1,3 @@
-console.log("Hola mundo!")
+import {Scene} from "@babylonjs/core"
+
+console.log(Scene)

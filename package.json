@@ -5,9 +5,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel serve index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "check": "tsc --noEmit"
   },
   "dependencies": {
+    "@babylonjs/core": "^4.0.3",
     "parcel-bundler": "^1.12.4",
     "typescript": "^3.7.2"
   }
