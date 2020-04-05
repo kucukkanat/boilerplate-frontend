@@ -1,16 +1,15 @@
 {
-  "name": "boardgame",
-  "version": "1.0.0",
+  "name": "@kucukkanat/boilerplate",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {
-    "dev": "parcel serve index.html",
-    "build": "parcel build index.html",
-    "checkSyntax": "tsc --noEmit"
-  },
+  "private": true,
+  "workspaces": ["packages/**"],
+  "scripts": {},
   "dependencies": {
-    "@babylonjs/core": "^4.0.3",
-    "parcel-bundler": "^1.12.4",
-    "typescript": "^3.7.2"
+    "eslint": "^6.8.0",
+    "husky": "^4.2.3",
+    "lerna": "^3.20.2",
+    "prettier": "^2.0.3"
   }
 }

@@ -1,3 +1,8 @@
-# Parcel starter
+# Boilerplate Monorepo For Full Stack Projects
 
-My mini parcel starter
+## Packages
+
+#### Architecture
+
+
+#### Client
